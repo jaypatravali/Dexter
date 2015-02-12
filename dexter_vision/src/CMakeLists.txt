@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(src)
+find_package( OpenCV REQUIRED )
+add_executable( gripper gripper.cpp )
+target_link_libraries( gripper ${OpenCV_LIBS} )
